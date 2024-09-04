@@ -1,0 +1,14 @@
+C:\Users\Oliver\Work\Programming\CS\Console Companion\bin\Debug\net8.0\Console Companion.exe
+C:\Users\Oliver\Work\Programming\CS\Console Companion\bin\Debug\net8.0\Console Companion.deps.json
+C:\Users\Oliver\Work\Programming\CS\Console Companion\bin\Debug\net8.0\Console Companion.runtimeconfig.json
+C:\Users\Oliver\Work\Programming\CS\Console Companion\bin\Debug\net8.0\Console Companion.dll
+C:\Users\Oliver\Work\Programming\CS\Console Companion\bin\Debug\net8.0\Console Companion.pdb
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.AssemblyInfoInputs.cache
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.AssemblyInfo.cs
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.csproj.CoreCompileInputs.cache
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.dll
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\refint\Console Companion.dll
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.pdb
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.genruntimeconfig.cache
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\ref\Console Companion.dll
