@@ -1,83 +1,105 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography;
 
 namespace VirtualPet {
     public class Pet {
-        public string Name { get; private set;}
-        public int Age { get; private set;}
-        public int Weight { get; private set;}
-        public int Hunger { get; private set;}
-        public int Health { get; private set;}
-        public int Happiness { get; private set;}
-        public int Energy { get; private set;}
-        public string State { get; private set;}
+        public string name { get; private set;}
+        public int age { get; private set;}
+        public int weight { get; private set;}
+        public int hunger { get; private set;}
+        public int health { get; private set;}
+        public int happiness { get; private set;}
+        public int energy { get; private set;}
+        public string state { get; private set;}
+        
 
         public Pet(string name) {
-            Name = name;
-            Age = 0;
-            Weight = 5;
-            Hunger = 0;
-            Health = 10;
-            Energy = 5;
-            Happiness = 5;
-            State = "Shocked";
+            this.name = name;
+            age = 0;
+            weight = 5;
+            hunger = 0;
+            health = 10;
+            energy = 5;
+            happiness = 5;
+            state = "Shocked";
+            
         }
 
         public Pet(string[] stats) {
-            Name = stats[0];
-            Age = Int32.Parse(stats[1]);
-            Weight = Int32.Parse(stats[2]);
-            Hunger = Int32.Parse(stats[3]);
-            Health = Int32.Parse(stats[4]);
-            Energy = Int32.Parse(stats[5]);
-            Happiness = Int32.Parse(stats[6]);
-            State = stats[7];
+            name = stats[0];
+            age = Int32.Parse(stats[1]);
+            weight = Int32.Parse(stats[2]);
+            hunger = Int32.Parse(stats[3]);
+            health = Int32.Parse(stats[4]);
+            energy = Int32.Parse(stats[5]);
+            happiness = Int32.Parse(stats[6]);
+            state = stats[7];
+            
         }
 
         ~Pet() {
-            Console.WriteLine($"{Name} will be waiting here for you.");
-
+            
         }
 
         public void Feed() {
-            Weight = Math.Min(Weight + 1, 10);
-            Hunger = Math.Max(Hunger - 2, 0);
-            Energy = Math.Min(Energy + 2, 10);
+            weight = Math.Min(weight + 1, 10);
+            hunger = Math.Max(hunger - 2, 0);
+            energy = Math.Min(energy + 2, 10);
             Loop();
         }
 
         public void Play() {
-            Happiness = Math.Min(Happiness + 1, 10);
-            Energy = Math.Max(Energy -1, 0);
+            happiness = Math.Min(happiness + 1, 10);
+            energy = Math.Max(energy -1, 0);
+            hunger = Math.Min(hunger + 1, 10);
             Loop();
         }
 
         public void Walk() {
-            Weight = Math.Max(Weight - 1, 0);
-            Energy = Math.Max(Energy -1, 0);
+            weight = Math.Max(weight - 1, 0);
+            energy = Math.Max(energy -1, 0);
+            hunger = Math.Min(hunger + 1, 10);
             Loop();
         }
 
         public void Visit() {
+            // Not implemented
             Loop();
         }
 
         public void Nap() {
-            Energy = Math.Min(Energy + 1, 10);
+            energy = Math.Min(energy + 1, 10);
+            happiness = Math.Max(happiness - 1, 0);
             Loop();
         }
 
         public void PassTime() {
-            Happiness = Math.Max(Happiness - 1, 0);
-            Energy = Math.Min(Energy + 1, 10);
+            happiness = Math.Max(happiness - 1, 0);
+            energy = Math.Min(energy + 1, 10);
             Loop();
         }
 
         public void Loop() {
-            Age++;
-            if (5 > Age && Age > 1) {
-                State = "Accepting";
+            age++;
+            if (age > 5) {
+                state = "Accepting";
             }
+            Console.WriteLine("Cycling.");           
         }
+
+        public void Stats() {
+                Console.WriteLine($"{name} is currently {state}, they are {age} cycles old.");
+                Console.WriteLine($"{name}s stats are as follows:");
+                Console.WriteLine("");
+                Console.WriteLine($"Weight: {weight}");
+                Console.WriteLine($"Hunger: {hunger}");
+                Console.WriteLine($"Health: {health}");
+                Console.WriteLine($"Happiness: {happiness}");
+                Console.WriteLine($"Energy: {energy}");
+        }
+
+        
         
     }
 }
