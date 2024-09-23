@@ -14,8 +14,8 @@ namespace VirtualPet {
         public string state { get; private set;}
         
 
-        public Pet(string name) {
-            this.name = name;
+        public Pet(string _name) {
+            name = _name;
             age = 0;
             weight = 5;
             hunger = 0;
