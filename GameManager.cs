@@ -1,5 +1,6 @@
 namespace  VirtualPet {
     public class GameManager {
+        FileManagement fManager = new FileManagement(); // Ensure fManager is accessible
         public void StartGame(Pet pet) {
             string option = "0";
             Console.WriteLine("");
@@ -35,6 +36,8 @@ namespace  VirtualPet {
                         pet.Nap();
                         break; 
                     case "0":
+                        Console.WriteLine($"Saving {pet.name}.");
+                        fManager.Save(pet);
                         break;
                     default:
                         Console.WriteLine("Incorrect Input");

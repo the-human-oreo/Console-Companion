@@ -12,3 +12,4 @@ C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\refint\Co
 C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.pdb
 C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.genruntimeconfig.cache
 C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\ref\Console Companion.dll
+C:\Users\Oliver\Work\Programming\CS\Console Companion\obj\Debug\net8.0\Console Companion.sourcelink.json

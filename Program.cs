@@ -3,7 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace VirtualPet {
     
-    public class Program {    
+    
+    public class Program {  
+        static FileManagement fManager = new FileManagement();
         static void Main(string[] args) {
             string option = "0";
             string name = "";
@@ -32,7 +34,14 @@ namespace VirtualPet {
                         gameManager.StartGame(myPet);
                         break;
                     case "2":
-                        Console.WriteLine("Not Implemented");
+                        string[] pInfo = fManager.Load();
+
+                        if (pInfo.Length == 0) {
+                            Console.WriteLine("Error loading file, please try again.");
+                        } else {
+                            myPet = new Pet(pInfo);
+                            gameManager.StartGame(myPet);
+                        }
                         break;
                     case "9":
                         Console.WriteLine("Not Implemented");
