@@ -1,5 +1,6 @@
 namespace  VirtualPet {
     public class GameManager {
+        // FeedInterface feed = FeedFactory.Create("");
         FileManagement fManager = new FileManagement(); // Ensure fManager is accessible
         public void StartGame(Pet pet) {
             string option = "0";
