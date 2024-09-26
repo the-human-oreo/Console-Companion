@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Runtime.InteropServices;
+using Microsoft.VisualBasic;
 
 namespace VirtualPet {
     
@@ -44,7 +45,8 @@ namespace VirtualPet {
                         }
                         break;
                     case "9":
-                        Console.WriteLine("Not Implemented");
+                        InfoMenu info = new InfoMenu();
+                        info.Instructions();
                         break;
                     case "0":
                         Console.WriteLine("Goodbye!");
