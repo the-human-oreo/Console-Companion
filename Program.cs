@@ -46,7 +46,7 @@ namespace VirtualPet {
                         break;
                     case "9":
                         InfoMenu info = new InfoMenu();
-                        info.Instructions();
+                        info.Menu();
                         break;
                     case "0":
                         Console.WriteLine("Goodbye!");

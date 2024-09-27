@@ -1,12 +1,17 @@
 namespace VirtualPet {
     public class InfoMenu {
-        public void menu() {
+        public void Menu() {
             Console.WriteLine("**** Information ****");
             Console.WriteLine("");
             Console.WriteLine("Welcome to ConsoleCompanion.");
             Console.WriteLine("The lite console game was developed by me learning the basics of object oriented programming.");
             Console.WriteLine("");
-            Console.WriteLine("What information would you like to know?");
+            // Console.WriteLine("What information would you like to know?");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
+            Console.WriteLine("");
+            Instructions();
         }
 
         public void Instructions() {
@@ -20,8 +25,9 @@ namespace VirtualPet {
             Console.WriteLine("");
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
-            //Console.SetCursorPosition(0, Console.GetCursorPosition());
+            // Console.SetCursorPosition(0, Console.GetCursorPosition());
             Console.WriteLine("");
+            Creator();
         }
 
         public void Creator() {
